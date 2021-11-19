@@ -72,7 +72,7 @@ function setup() {
   video.size(800,400);
   video.parent('game_console');
 
-  poseNet = ml5.poseNet(video, model);
+  poseNet = ml5.poseNet(video, modelLoaded);
   poseNet.on('pose' , gotPoses)
 
 
